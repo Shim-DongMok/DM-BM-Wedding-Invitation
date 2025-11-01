@@ -6,10 +6,7 @@
 
 축하메시지 남기는 방법은 
 
-![메인사진](https://raw.githubusercontent.com/Shim-DongMok/DM-BM-Wedding-Invitation/main/docs/images/Studio_Shoot/studio_photo18.jpg)
-
-
-
+<img src="https://raw.githubusercontent.com/Shim-DongMok/DM-BM-Wedding-Invitation/main/docs/images/Studio_Shoot/studio_photo18.JPG" alt="메인사진" width="400"/>
 
 ## 예식정보
 

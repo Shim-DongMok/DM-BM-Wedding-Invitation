@@ -6,10 +6,10 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>심동목 ♥ 김보민 결혼식에 초대합니다.</title>
     <meta content="심동목과 김보민의 결혼식에 초대합니다!!!" name="description"/>
-    <meta property="og:image" content="images/Studio_Shoot.jpg">      <!--SNS 미리보기 사진-->
-    <link href="images\Icon" rel="Wedding-ring-icon" sizes="180x180">
-    <link href="images\Icon/wedding_ring-32x32.png" rel="Wedding-ring-icon" sizes="32x32" type="image/png">
-    <link href="images\Icon/wedding_ring-16x16.png" rel="Wedding-ring-icon" sizes="16x16" type="image/png">
+    <meta property="og:image" content="https://github.com/Shim-DongMok/DM-BM-Wedding-Invitation/blob/main/docs/images/Studio_Shoot/studio_photo18.JPG">      <!--SNS 미리보기 사진-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/Icon/wedding_ring-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Icon/wedding_ring-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Icon/wedding_ring-16x16.png">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <link href="css/ekko-lightbox.css" rel="stylesheet">                    <!--라이트박스 적용 추후 확인필요-->
@@ -21,8 +21,10 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  <!--Font Awesome 아이콘 사용-->
     <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js" type="text/javascript"></script>   <!--축하 메시지 사용 코드-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.js" type="text/javascript"></script>
-    <script type="text/javascript">
- 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    
         $(document).ready(function () {
 
             function getText(){
@@ -39,9 +41,8 @@
             }
             var markdown_source = getText();
             var md = new Remarkable();
-            $("#comments").append(md.render(comment_contents));
-            }
-    );
+            $("#comments").append(md.render(markdown_source));
+        });
     
     </script>
         <style>
@@ -197,17 +198,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <div class="my-3">
-                            <iframe  
-                                src="https://www.youtube.com/embed/L1gP55_gYMc?si=WZF1MFy6YqCx-I1L" 
-                                title="Wedding Party" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
-
-                        </div>
+                    <div class="embed-responsive embed-responsive-16by9 my-3">
+                       <iframe src="https://www.youtube.com/embed/L1gP55_gYMc?si=WZF1MFy6YqCx-I1L"
+                            title="Wedding Party" 
+                            allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="row">
@@ -296,7 +290,6 @@
                                     <img src="images/Studio_Shoot/studio_photo03.jpeg" alt="Studio Photo 10">
                                 </a>
                             </div>
-                                        --</div>
                         </div>
                     </div>
                     
@@ -307,7 +300,7 @@
                     <div class="row">
                         <div class="col-md-4 col-sm-6 mb-3">
                             <a href="images/Outdoor_Shoot/outdoor_photo01.jpg" data-fancybox="outdoor-gallery" data-caption="Outdoor_Shoot Photo 1">
-                                <img src="images/Outdoor_Shoot/outdoor_photo01.jpg" alt="Outdoor_Shoot Photo 1">
+                                <img src="images/Outdoor_Shoot/outdoor_photo01.JPG" alt="Outdoor_Shoot Photo 1">
                             </a>
                         </div>
                         <!-- 나머지 사진은 숨김 처리 -->
@@ -319,17 +312,17 @@
                             </div>
                             <div class="col-md-4 col-sm-6 mb-3">
                                 <a href="images/Outdoor_Shoot/outdoor_photo03.jpg" data-fancybox="outdoor-gallery" data-caption="Outdoor_Shoot Photo 3">
-                                    <img src="images/Outdoor_Shoot/outdoor_photo03.jpg" alt="Outdoor_Shoot Photo 3">
+                                    <img src="images/Outdoor_Shoot/outdoor_photo03.JPG" alt="Outdoor_Shoot Photo 3">
                                 </a>
                             </div>
                             <div class="col-md-4 col-sm-6 mb-3">
                                 <a href="images/Outdoor_Shoot/outdoor_photo04.jpg" data-fancybox="outdoor-gallery" data-caption="Outdoor_Shoot Photo 4">
-                                    <img src="images/Outdoor_Shoot/outdoor_photo04.jpg" alt="Outdoor_Shoot Photo 4">
+                                    <img src="images/Outdoor_Shoot/outdoor_photo04.JPG" alt="Outdoor_Shoot Photo 4">
                                 </a>
                             </div>
                             <div class="col-md-4 col-sm-6 mb-3">
                                 <a href="images/Outdoor_Shoot/outdoor_photo05.jpg" data-fancybox="outdoor-gallery" data-caption="Outdoor_Shoot Photo 5">
-                                    <img src="images/Outdoor_Shoot/outdoor_photo05.jpg" alt="Outdoor_Shoot Photo 5">
+                                    <img src="images/Outdoor_Shoot/outdoor_photo05.JPG" alt="Outdoor_Shoot Photo 5">
                                 </a>
                             </div>
                         </div>

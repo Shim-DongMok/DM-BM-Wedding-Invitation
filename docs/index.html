@@ -56,6 +56,52 @@
             margin-top: 30px;
             margin-bottom: 20px;
         }
+        .transport-info {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            font-family: "Noto Sans KR", sans-serif;
+            line-height: 1.7;
+        }
+
+            .transport-info .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: #2b7de9;
+        }
+
+            .transport-info .section {
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            text-align: left;
+        }
+
+            .transport-info h6 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+            .transport-info p {
+            font-size: 14px;
+            margin: 0 0 8px 0;
+        }
+
+            .transport-info ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+            .transport-info li {
+            font-size: 14px;
+            margin-bottom: 4px;
+}
     </style>
 </head>
 
@@ -460,15 +506,15 @@
                         <div class="my-3 text-center">
                             <a href="https://naver.me/5Rh0OxaM">
                                 <img alt="naver-map" class="map-icon" id="naver-map"
-                                     src="images/map/naver-map.png"/>
+                                     src="images/Icon/naver-map.png"/>
                             </a>
                             <a href="https://kko.kakao.com/og3ipQVH-8">
                                 <img alt="kakao-map" class="map-icon" id="kakao-map"
-                                     src="images/map/kakao-map.png"/>
+                                     src="images/Icon/kakao-map.png"/>
                             </a>
-                            <a href="https://maps.app.goo.gl/jfDxw">
+                            <a href="https://maps.app.goo.gl/2YcWKRKhk7b8nNsD9">
                                 <img alt="google-map" class="map-icon" id="google-map"
-                                     src="images/map/google-map.png"/>
+                                     src="images/Icon/google-map.png"/>
                             </a>
                             <div style="display: flex; justify-content: center; align-items: center; width: 100%; padding: 20px 0;">
                             <iframe 
@@ -482,21 +528,31 @@
                             </iframe>
                         </div>
                     </div>
-                        <div class="col text-center">
-                            <label style="font-family: 'Noto Serif KR', serif; font-size: 15px;">
-                                <h6>버스 이용시</h6>
-                                <h7>신도림역(17-102) 정류장 하차</h7>
-                                <h7>직선 : 5619, 6411, 6511, 6611</h7>
-                                <h7>직행 : 5200</h7>
-                                <h7>마을 : 영등포09, 영등포12, 영등포13</h7>
-                                <h6>지하철 이용시</h6>
-                                <h7>지하철 1호선, 2호선 신도림역 3번출구와 직접 연결되어 있습니다.</h7>
-                                <h6>승용차 이용시</h6>
-                                <h7>테크노마트 지하주차장 이용(B3-B7)</h7>
-                            </label>
+                        <!-- 교통 안내 섹션 -->
+                        <div class="transport-info">
+
+                        <h5 class="section-title">🚗 교통 안내</h5>
+
+                        <div class="section">
+                            <h6>🚌 버스 이용시</h6>
+                            <p>신도림역(17-102) 정류장 하차</p>
+                            <ul>
+                            <li>직선 : 5619, 6411, 6511, 6611</li>
+                            <li>직행 : 5200</li>
+                            <li>마을 : 영등포09, 영등포12, 영등포13</li>
+                            </ul>
                         </div>
-                        <div class="my-3">
-                            <iframe src="https://maps.app.goo.gl/2YcWKRKhk7b8nNsD9" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                        <div class="section">
+                            <h6>🚇 지하철 이용시</h6>
+                            <p>지하철 1호선, 2호선 신도림역 3번출구와 직접 연결되어 있습니다.</p>
+                        </div>
+
+                        <div class="section">
+                            <h6>🚘 승용차 이용시</h6>
+                            <p>테크노마트 지하주차장 이용(B3~B7)</p>
+                        </div>
+
                         </div>
                     </div>
                 </div>
@@ -504,7 +560,6 @@
 
             </div>
         </div>
-
         <div class="ww-section bg-light" id="comment">
             <div class="ww-photo-gallery">
                 <div class="container">

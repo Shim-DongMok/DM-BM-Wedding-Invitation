@@ -101,7 +101,14 @@
             .transport-info li {
             font-size: 14px;
             margin-bottom: 4px;
-}
+        }
+        .form-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 10px 0; /* 위아래 간격 조정 */
+        }
+
     </style>
 </head>
 
@@ -234,9 +241,6 @@
 <div class="ww-section" id="Photo">
     <div class="ww-photo-gallery">
         <div class="container">
-            <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">우리의 사진</h2>
-            
-            
             <h3 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">웨딩 사진</h3>
                 <div class="ww-gallery">
                     <div class="row">
@@ -556,45 +560,35 @@
                         </div>
                     </div>
                 </div>
-
-
-            </div>
-        </div>
-        <div class="ww-section bg-light" id="comment">
-            <div class="ww-photo-gallery">
-                <div class="container">
-                    <div class="col text-center">
-                        <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">축하의 한마디</h2><br>
-                        <div id="comments"></div>
-                        <br>
-                        <div class="row">
-                            <div class="col text-center"><form action=" ">   <!-- readme 주소 넣기-->
-                                <button class="btn btn-primary btn-submit" type="submit">메시지 작성</button></form>
-                            </div>
+                <div class="ww-account">
+                    <div class="container">
+                        <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">감사의 마음</h2>
+                        <div class="col text-center mb-5">
+                            <h6 style="font-family: 'Noto Serif KR', serif;">
+                                신랑측 예금주 : 심동목<br>
+                                국민은행 752602-04-200156<br>
+                                신부측 예금주 : 김보민<br>
+                                신한은행 110-311-208990<br>
+                                <br><br>
+                            </h6>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- 축하 메세지-->
+        <div class="form-wrapper">
+            <iframe 
+                src="https://forms.gle/Ype9mAdHzQjrWbp88" 
+                width="640" height="800" 
+                frameborder="0">
+            </iframe>
+        </div>
 
     </div>
 </div>
 </div>
-        <div class="ww-section parallax-window  text-white" data-parallax="scroll" data-image-src="images/gift/gift-background.jpg" id="gifts">
-            <div class="ww-gift-account">
-                <div class="container">
-                    <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">감사의 마음</h2>
-                    <div class="col text-center mb-5">
-                        <h6 style="font-family: 'Noto Serif KR', serif;">
-                            신랑측 예금주 : 심동목<br>
-                            국민은행 752602-04-200156<br>
-                            신부측 예금주 : 김보민<br>
-                            신한은행 110-311-208990<br>
-                            <br><br>
-                        </h6>
-                    </div>
-                </div>
-            </div>
+
         </div>
 <footer></footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

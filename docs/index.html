@@ -7,6 +7,7 @@
     <title>심동목 ♥ 김보민 결혼식에 초대합니다.</title>
     <meta content="심동목과 김보민의 결혼식에 초대합니다!!!" name="description"/>
     <meta property="og:image" content="images/Studio_Shoot.jpg"> <!--SNS 미리보기 사진-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="images/Icon/wedding_ring-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/Icon/wedding_ring-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/Icon/wedding_ring-16x16.png">
@@ -46,7 +47,10 @@
     </script>
         <style>
         .ww-gallery img {
-            margin-top: 30px;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
             margin-bottom: 20px;
         }
         .ww-title {
@@ -104,6 +108,22 @@
             justify-content: center;
             align-items: flex-start;
             margin: 10px 0; /* 위아래 간격 조정 */
+        }
+
+        @media (max-width: 768px) {
+        .ww-gallery img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        .ww-section-title {
+            font-size: 1.5rem; /* 제목 작게 */
+        }
+
+        p, h5 {
+            font-size: 0.95rem; /* 본문 줄이기 */
+        }
         }
 
     </style>

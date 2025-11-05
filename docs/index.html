@@ -128,26 +128,272 @@
         object-position: center;
         z-index: -1;            /* 글자 뒤로 보내기 */
         }
+        /* 전체 영역 정렬 및 색상 설정 */
+            .ww-announcement-container {
+            text-align: center;
+            color: papayawhip;
+            padding-top: 55vh;
+        }
 
+        /* 커플 이름 */
+            .ww-announcement-container .ww-couple-name {
+            font-size: 6em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* WE ARE GETTING MARRIED */
+            .ww-announcement-container .subtitle {
+            font-family: 'Gugi', cursive;
+            font-size: 3em;
+            margin-bottom: 8px;
+        }
+
+        /* 날짜와 장소 */
+            .ww-announcement-container .wedding-info {
+            font-family: 'Noto Serif KR', serif;
+            font-size: 3em;
+            letter-spacing: -1px;
+        }
+
+            .ww-announcement-container .wedding-info b {
+            font-size: 1.4em;
+        }
+        /* Gallery 제목 스타일 */
+            .gallery-title {
+            font-family: 'Noto Serif KR', serif;
+            font-size: 5rem;            /* 글자 크기 */
+            text-align: center;         /* 가운데 정렬 */
+            padding-bottom: 1rem;       /* 아래 여백 */
+            font-weight: bold;          /* 굵게 */
+            color: #333;                /* 글자색 */
+        }
+        /* 신랑 & 신부 섹션 제목 스타일 */
+            .couple-title {
+            font-family: 'Noto Serif KR', serif;
+            font-size: 5rem;            /* 글자 크기 */
+            text-align: center;         /* 가운데 정렬 */
+            padding-bottom: 1rem;       /* 아래 여백 */
+            font-weight: bold;          /* 굵게 */
+            color: #333;                /* 글자색 */
+        }
+        /* 결혼식 초대 문구 스타일 */
+        .invitation-title {
+            font-family: 'Noto Serif KR', serif;
+            font-size: 4rem;            /* 글자 크기 */
+            text-align: center;         /* 가운데 정렬 */
+            padding-bottom: 1rem;       /* 아래 여백 */
+            font-weight: 600;           /* 약간 굵게 */
+            color: #333;                /* 글자색 */
+            line-height: 1.5;           /* 줄 간격 */
+        }
+        .wedding-subtitle {
+            font-family: 'Noto Serif KR', serif;
+            font-size: 2rem;          /* 기본 크기 */
+            text-align: center;         /* 가운데 정렬 */
+            color: #555;                /* 약간 부드러운 회색 톤 */
+            letter-spacing: 1px;        /* 약간의 자간 */
+            margin-bottom: 0.5rem;      /* 아래 여백 */
+        }
+        /* 신부 이름 스타일 */
+        .bride-name {
+            font-family: 'Sunflower', sans-serif;
+            font-size: 1.5em;
+            text-align: center;       /* 가운데 정렬 */
+            color: #333;              /* 글자색 */
+            font-weight: 500;         /* 중간 굵기 */
+            margin-bottom: 0.5rem;    /* 여백 */
+        }
+        /* 신랑·신부 이름 스타일 */
+            .person-name {
+            font-family: 'Sunflower', sans-serif;
+            font-size: 1.5em;
+            text-align: center;     /* 가운데 정렬 */
+            color: #333;            /* 글자색 (원하면 변경 가능) */
+            font-weight: 500;       /* 약간 두껍게 */
+            margin-bottom: 0.5rem;
+        }
+        .wedding-info {
+        text-align: center;
+        margin: 0 auto;
+        }
+
+        .wedding-info-title {
+        font-family: 'Noto Serif KR', serif;
+        font-size: 5em;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+        color: #333;
+        }
+
+        .wedding-info-list {
+            list-style: none;        /* 불릿 제거 */
+            padding: 0;
+            margin: 0;
+            font-family: 'Noto Serif KR', serif;
+            font-size: 2rem;
+            line-height: 1.8;  
+        }
+
+        .wedding-info-list li {
+        margin-bottom: 0.5em;
+        }
+
+        /* 🎥 웨딩 본식 유튜브 영상 */
+        .wedding-video {
+        position: relative;
+        width: 100%;
+        max-width: 800px;       /* 데스크탑 최대 폭 제한 */
+        margin: 20px auto;      /* 중앙 정렬 */
+        aspect-ratio: 16 / 9;   /* 비율 고정 */
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .wedding-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 12px;
+        }
+        /* 🥂 식사 정보 영역 */
+        .banquet-info {
+        text-align: center;
+        margin: 0 auto;
+        }
+
+        .banquet-info-title {
+        font-family: 'Noto Serif KR', serif;
+        font-size: 5em;
+        font-weight: 600;
+        margin-bottom: 0.5em;
+        color: #333;
+        }
+
+        .banquet-info-list {
+            list-style: none;        /* 불릿 제거 */
+            padding: 0;
+            margin: 0;
+            font-family: 'Noto Serif KR', serif;
+            font-size: 2rem;
+            line-height: 1.8;   
+        }
+
+        .banquet-info-list li {
+        margin-bottom: 0.5em;
+        }
+
+        /* 🎬 식사 관련 유튜브 영상 */
+        .banquet-video {
+        position: relative;
+        width: 100%;
+        max-width: 800px;       /* 데스크탑 최대 폭 제한 */
+        margin: 20px auto;      /* 가운데 정렬 */
+        aspect-ratio: 16 / 9;   /* 최신 브라우저 반응형 비율 */
+        overflow: hidden;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .banquet-video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 12px;
+        }
+
+        /* 아이콘과 텍스트 */
+        .wedding-info-list i {
+            color: #999;             /* 아이콘 색상 */
+        }
+
+        .wedding-info-list span {
+            color: #555;             /* 본문 글자색 */
+        }
         @media (max-width: 768px) {
-        .ww-gallery img {
-            max-width: 100%;
-            border-radius: 6px;
-            margin-bottom: 10px;
-        }
-        .ww-photo-gallery {
-            max-width: 100%;
-            border-radius: 6px;
-            margin-bottom: 10px;
-        }
+            .ww-gallery img {
+                max-width: 100%;
+                border-radius: 6px;
+                margin-bottom: 10px;
+            }
+            .ww-photo-gallery {
+                max-width: 100%;
+                border-radius: 6px;
+                margin-bottom: 10px;
+            }
+            .couple-title {
+                font-size: 1.5rem;        /* 작은 화면일 때 폰트 축소 */
+                padding-bottom: 0.5rem;
+            }
+            .wedding-info-title {
+                font-size: 1.2rem;
+            }
+            .wedding-info-list {
+                font-size: 0.9rem;
+            }
+            .ww-announcement-container {
+            padding-top: 10vh;
+            }
+            .ww-announcement-container .ww-couple-name {
+            font-size: 2.2em;
+            }
+            .ww-announcement-container .h2 {
+            font-size: 0.9em;
+            }
+            .ww-section-title {
+                font-size: 1.5rem; /* 제목 작게 */
+            }
+            .wedding-subtitle {
+                font-size: 1rem;          /* 작은 화면에서는 조금 축소 */
+            }
+            .bride-name {
+                font-size: 1.2em;       /* 작은 화면일 때 크기 축소 */
+            }
+            .person-name {
+                font-size: 1.2em;
+            }
+            p, h5 {
+                font-size: 0.95rem; /* 본문 줄이기 */
+            }
+            .gallery-title {
+                font-size: 1.5rem;        /* 화면 작아질 때 폰트 축소 */
+                padding-bottom: 0.5rem;
+            }
+            .invitation-title {
+                font-size: 1.3rem;        /* 작은 화면일 때 폰트 크기 축소 */
+                padding-bottom: 0.5rem;
+            }
+            .embed-responsive {
+                max-width: 100%;
+            }
+            .embed-responsive iframe {
+                height: 240px;
+            }
+              .banquet-info-title {
+                font-size: 1.3em;
+            }
+            
+            .banquet-video {
+                max-width: 100%;
+                aspect-ratio: 16 / 9;
+            }
+            .wedding-info-title {
+                font-size: 1.3em;
+            }
 
-        .ww-section-title {
-            font-size: 1.5rem; /* 제목 작게 */
-        }
+            .wedding-video {
+                max-width: 100%;
+                aspect-ratio: 16 / 9;
+            }
 
-        p, h5 {
-            font-size: 0.95rem; /* 본문 줄이기 */
-        }
+                        
         }
 
     </style>
@@ -169,15 +415,12 @@
 
             <!-- ✅ 내용 -->
             <div class="container ww-announcement-container">
-            <p class="ww-couple-name ww-title" style="font-size:4.0em">DongMok & BoMin</p>
-            <p class="h2 mt-5 ww-title" style="font-family: 'Gugi', cursive; font-size:1.0em">
-                | WE ARE GETTING MARRIED |
-            </p>
-            <p class="h2 mt-5 ww-title"
-                style="font-family: 'Noto Serif  KR', serif; font-size:1.0em; letter-spacing:-1px">
-                <b style="font-size:1.4em;">2026. 01. 17. SAT PM 04:50</b>
-                <br>신도림 웨딩시티 스타티스 홀
-            </p>
+                <p class="ww-couple-name ww-title">DongMok & BoMin</p>
+                <p class="h2 mt-5 ww-title subtitle">| WE ARE GETTING MARRIED |</p>
+                <p class="h2 mt-5 ww-title wedding-info">
+                    <b>2026. 01. 17. SAT PM 04:50</b><br>
+                    신도림 웨딩시티 스타티스 홀
+                </p>
             </div>
         </div>
 
@@ -202,20 +445,18 @@
         </div>
         <div class="ww-section" id="Main">
             <div class="container">
-                <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">신랑 & 신부</h2>
+                <h2 class="couple-title">신랑 & 신부</h2>
                 <div class="row text-center">
                     <div class="col-md-6">
                         <div class="mt-3">
-                            <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
-                                김보민</h3>
-                            <img alt="Groom" class="img-fluid" src="images/Studio_Shoot/studio_photo08.jpeg"/>
+                            <h3 class="person-name">심동목</h3>
+                            <img alt="Bride" class="img-fluid" src="images/Studio_Shoot/studio_photo02.jpg"/>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mt-3">
-                            <h3 class="h2 ww-title" style="font-family: 'Sunflower', sans-serif; font-size:1.5em">
-                                심동목</h3>
-                            <img alt="Bride" class="img-fluid" src="images/Studio_Shoot/studio_photo02.jpg"/>
+                            <h3 class="bride-name">김보민</h3>
+                            <img alt="Groom" class="img-fluid" src="images/Studio_Shoot/studio_photo08.jpeg"/>
                         </div>
                     </div>
                 </div>
@@ -223,319 +464,121 @@
         </div>
         <div class="ww-section bg-light" id="events">
             <div class="container ww-wedding-event">
-                <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">동목, 보민의 결혼식에 초대합니다.</h2>
+                <h2 class="invitation-title">동목, 보민의 결혼식에 초대합니다.</h2>
                     <div class="col text-center mb-5">
-                        <h6 style="font-family: 'Noto Serif KR', serif;">
-                            Wedding invitation
-                        </h6>
+                        <h3 class="wedding-subtitle">서로에게 가장 소중한 사람이 되기로 약속했습니다.<br>
+                            마침내 이 날.<br>
+                            귀한 걸음으로 축복해 주시면<br>
+                            그 고마움, 평생 간직하겠습니다.<br><br><br>
+                            신랑 심동목 신부 김보민
+                        </h3>
                     </div>
                 <div class="row">
-                    <div class="col-md-7 col-sm-12">
+                    <div class="col-md-7 col-sm-12 mx-auto text-center">
                         <div class="my-3">
-                            <div class="h4">웨딩 본식</div>
-                            <ul>
-                                <li>
-                                    <i class="text-muted fas fa-map-marker-alt"></i>
-                                    <span class="pl-2 text-muted">신도림 웨딩시티 스타티스 홀</span>
-                                </li>
-                                <li class="pt-2">
-                                    <i class="text-muted far fa-calendar-alt"></i>
-                                    <span class="pl-2 text-muted">2026년 01월 17일, 04:50 PM</span>
-                                </li>
-                            </ul>
+                            <div class="wedding-info">
+                                <div class="wedding-info-title">웨딩 본식</div>
+                                    <ul class="wedding-info-list">
+                                        <li>
+                                            <i class="text-muted fas fa-map-marker-alt"></i>
+                                                <span class="pl-2 text-muted">신도림 웨딩시티 스타티스 홀</span>
+                                        </li>
+                                        <li class="pt-2">
+                                            <i class="text-muted far fa-calendar-alt"></i>
+                                                <span class="pl-2 text-muted">2026년 01월 17일, 04:50 PM</span>
+                                        </li>
+                                    </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="embed-responsive embed-responsive-16by9 my-3">
-                       <iframe src="https://www.youtube.com/embed/L1gP55_gYMc?si=WZF1MFy6YqCx-I1L"
-                            title="Wedding Party" 
-                            allowfullscreen></iframe>
+                        <div class="embed-responsive embed-responsive-16by9 my-3">
+                        <iframe src="https://www.youtube.com/embed/L1gP55_gYMc?si=WZF1MFy6YqCx-I1L"
+                                title="Wedding Party" 
+                                allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <div class="my-3">
-                            <div class="h4">식사</div>
-                            <ul>
-                                <li>
-                                    <i class="text-muted fas fa-map-marker-alt "></i>
-                                    <span class="pl-2 text-muted">Wedding City Premium Buffet</span>
-                                </li>
-                                <li class="pt-2">
-                                    <i class="text-muted far fa-calendar-alt "></i>
-                                    <span class="pl-2 text-muted">2026년 01월 17일, 4:50PM - 6:50PM</span>  <!-- 끝나는 시간 확인-->
-                                </li>
+                <div class="col-md-7 col-sm-12 mx-auto text-center">
+                    <div class="my-3">
+                        <div class="banquet-info">
+                            <div class="banquet-info-title">식사</div>
+                            <ul class="banquet-info-list">
+                            <li>
+                                <i class="text-muted fas fa-map-marker-alt"></i>
+                                   <span class="pl-2 text-muted">Wedding City Premium Buffet</span>
+                            </li>
+                            <li class="pt-2">
+                                <i class="text-muted far fa-calendar-alt"></i>
+                                    <span class="pl-2 text-muted">2026년 01월 17일, 4:50PM - 6:50PM</span>
+                            </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe  
-                                src="https://www.youtube.com/embed/pKTisMVRR98?si=irW8nDmkdkrKRB5N" 
-                                title="Banquet Hall" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowfullscreen>
-                            </iframe>
+                    <div class="banquet-video embed-responsive embed-responsive-16by9 my-3">
+                    <iframe  
+                        src="https://www.youtube.com/embed/pKTisMVRR98?si=irW8nDmkdkrKRB5N" 
+                        title="Banquet Hall" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
                     </div>
                 </div>
+</div>
             </div>
         </div>
-<div class="ww-section" id="Photo">
-    <div class="ww-photo-gallery">
-        <div class="container">
-            <h3 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">웨딩 사진</h3>
-                <div class="ww-gallery">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/Studio_Shoot/studio_photo06.jpg" data-fancybox="studio-gallery" data-caption="Studio Photo 1">
-                                    <img src="images/Studio_Shoot/studio_photo06.jpg" alt="Studio Photo 1">
-                            </a>
-                        </div> 
-                        <!-- 나머지 사진은 숨김 처리 -->
-                        <div style="visibility:hidden; height:0; overflow:hidden;">
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <a href="images/Studio_Shoot/studio_photo12.jpg" data-fancybox="studio-gallery" data-caption="Studio Photo 2">
-                                    <img src="images/Studio_Shoot/studio_photo12.jpg" alt="Studio Photo 2">
-                                </a>
-                            </div>    
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <a href="images/Studio_Shoot/studio_photo14.jpg" data-fancybox="studio-gallery" data-caption="Studio Photo 3">
-                                    <img src="images/Studio_Shoot/studio_photo14.jpg" alt="Studio Photo 3">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <a href="images/Studio_Shoot/studio_photo08.jpeg" data-fancybox="studio-gallery" data-caption="Studio Photo 4">
-                                    <img src="images/Studio_Shoot/studio_photo08.jpeg" alt="Studio Photo 4">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <a href="images/Studio_Shoot/studio_photo07.jpeg" data-fancybox="studio-gallery" data-caption="Studio Photo 5">
-                                    <img src="images/Studio_Shoot/studio_photo07.jpeg" alt="Studio Photo 5">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 mb-3">    
-                                <a href="images/Studio_Shoot/studio_photo15.jpg" data-fancybox="studio-gallery" data-caption="Studio Photo 6">
-                                    <img src="images/Studio_Shoot/studio_photo15.jpg" alt="Studio Photo 6">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <a href="images/Studio_Shoot/studio_photo16.jpg" data-fancybox="studio-gallery" data-caption="Studio Photo 7">
-                                    <img src="images/Studio_Shoot/studio_photo16.jpg" alt="Studio Photo 7">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <a href="images/Studio_Shoot/studio_photo17.jpg" data-fancybox="studio-gallery" data-caption="Studio Photo 8">
-                                    <img src="images/Studio_Shoot/studio_photo17.jpg" alt="Studio Photo 8">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <a href="images/Studio_Shoot/studio_photo11.jpg" data-fancybox="studio-gallery" data-caption="Studio Photo 9">
-                                    <img src="images/Studio_Shoot/studio_photo11.jpg" alt="Studio Photo 9">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <a href="images/Studio_Shoot/studio_photo03.jpeg" data-fancybox="studio-gallery" data-caption="Studio Photo 10">
-                                    <img src="images/Studio_Shoot/studio_photo03.jpeg" alt="Studio Photo 10">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
+        <div class="ww-section" id="Photo">
+        <div class="ww-photo-gallery">
+            <div class="container">
+            <h3 class="gallery-title">Gallery</h3>
+            
+            <!-- 슬라이드 전체 -->
+            <div id="weddingCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                <!-- 대표 사진 (첫 번째는 active 필수) -->
+                <div class="carousel-item active">
+                    <a href="images/Studio_Shoot/studio_photo06.jpg" data-fancybox="gallery" data-caption="Studio Photo 1">
+                    <img src="images/Studio_Shoot/studio_photo06.jpg" class="d-block w-100" alt="Studio Photo 1">
+                    </a>
                 </div>
 
-            <h3 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">야외 사진</h3>
-                <div class="ww-gallery">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/Outdoor_Shoot/outdoor_photo01.jpg" data-fancybox="outdoor-gallery" data-caption="Outdoor_Shoot Photo 1">
-                                <img src="images/Outdoor_Shoot/outdoor_photo01.JPG" alt="Outdoor_Shoot Photo 1">
-                            </a>
-                        </div>
-                        <!-- 나머지 사진은 숨김 처리 -->
-                        <div style="visibility:hidden; height:0; overflow:hidden;">
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <a href="images/Outdoor_Shoot/outdoor_photo02.jpg" data-fancybox="outdoor-gallery" data-caption="Outdoor_Shoot Photo 2">
-                                    <img src="images/Outdoor_Shoot/outdoor_photo02.jpg" alt="Outdoor_Shoot Photo 2">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <a href="images/Outdoor_Shoot/outdoor_photo03.jpg" data-fancybox="outdoor-gallery" data-caption="Outdoor_Shoot Photo 3">
-                                    <img src="images/Outdoor_Shoot/outdoor_photo03.JPG" alt="Outdoor_Shoot Photo 3">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <a href="images/Outdoor_Shoot/outdoor_photo04.jpg" data-fancybox="outdoor-gallery" data-caption="Outdoor_Shoot Photo 4">
-                                    <img src="images/Outdoor_Shoot/outdoor_photo04.JPG" alt="Outdoor_Shoot Photo 4">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-sm-6 mb-3">
-                                <a href="images/Outdoor_Shoot/outdoor_photo05.jpg" data-fancybox="outdoor-gallery" data-caption="Outdoor_Shoot Photo 5">
-                                    <img src="images/Outdoor_Shoot/outdoor_photo05.JPG" alt="Outdoor_Shoot Photo 5">
-                                </a>
-                            </div>
-                        </div>
-                    </div>    
+                <!-- 나머지 사진들 -->
+                <div class="carousel-item">
+                    <a href="images/Studio_Shoot/studio_photo12.jpg" data-fancybox="gallery" data-caption="Studio Photo 2">
+                    <img src="images/Studio_Shoot/studio_photo12.jpg" class="d-block w-100" alt="Studio Photo 2">
+                    </a>
                 </div>
-            <h3 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">데일리 사진</h3>
-                <div class="ww-gallery">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo017.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 1">
-                                <img src="images/daily_life/daily_life_photo017.jpg" alt="Daily_life 1">
-                            </a>
-                        </div>
-                    <!-- 나머지 사진은 숨김 처리 -->
-                    <div style="visibility:hidden; height:0; overflow:hidden;">
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo096.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 2">
-                                <img src="images/daily_life/daily_life_photo096.jpg" alt="Daily_life 2">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo012.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 3">
-                                <img src="images/daily_life/daily_life_photo012.jpg" alt="Daily_life 3">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo028.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 4">
-                                <img src="images/daily_life/daily_life_photo028.jpg" alt="Daily_life 4">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo045.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 5">
-                                <img src="images/daily_life/daily_life_photo045.jpg" alt="Daily_life 5">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo040.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 6">
-                                <img src="images/daily_life/daily_life_photo040.jpg" alt="Daily_life 6">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo038.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 7">
-                                <img src="images/daily_life/daily_life_photo038.jpg" alt="Daily_life 7">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo129.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 8">
-                                <img src="images/daily_life/daily_life_photo129.jpg" alt="Daily_life 8">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo125.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 9">
-                                <img src="images/daily_life/daily_life_photo125.jpg" alt="Daily_life 9">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo106.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 10">
-                                <img src="images/daily_life/daily_life_photo106.jpg" alt="Daily_life 10">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo092.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 11">
-                                <img src="images/daily_life/daily_life_photo092.jpg" alt="Daily_life 11">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo094.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 12">
-                                <img src="images/daily_life/daily_life_photo094.jpg" alt="Daily_life 12">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo042.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 13">
-                                <img src="images/daily_life/daily_life_photo042.jpg" alt="Daily_life 13">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo037.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 14">
-                                <img src="images/daily_life/daily_life_photo037.jpg" alt="Daily_life 14">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo026.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 15">
-                                <img src="images/daily_life/daily_life_photo026.jpg" alt="Daily_life 15">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo016.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 16">
-                                <img src="images/daily_life/daily_life_photo016.jpg" alt="Daily_life 16">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo025.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 17">
-                                <img src="images/daily_life/daily_life_photo025.jpg" alt="Daily_life 17">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo029.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 18">
-                                <img src="images/daily_life/daily_life_photo029.jpg" alt="Daily_life 18">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo095.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 19">
-                                <img src="images/daily_life/daily_life_photo095.jpg" alt="Daily_life 19">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo032.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 20">
-                                <img src="images/daily_life/daily_life_photo032.jpg" alt="Daily_life 20">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo034.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 21">
-                                <img src="images/daily_life/daily_life_photo034.jpg" alt="Daily_life 21">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo035.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 22">
-                                <img src="images/daily_life/daily_life_photo035.jpg" alt="Daily_life 22">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo048.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 23">
-                                <img src="images/daily_life/daily_life_photo048.jpg" alt="Daily_life 23">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo027.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 24">
-                                <img src="images/daily_life/daily_life_photo027.jpg" alt="Daily_life 24">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo015.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 25">
-                                <img src="images/daily_life/daily_life_photo015.jpg" alt="Daily_life 25">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo014.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 26">
-                                <img src="images/daily_life/daily_life_photo014.jpg" alt="Daily_life 26">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo018.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 27">
-                                <img src="images/daily_life/daily_life_photo018.jpg" alt="Daily_life 27">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo020.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 28">
-                                <img src="images/daily_life/daily_life_photo020.jpg" alt="Daily_life 28">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo061.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 28">
-                                <img src="images/daily_life/daily_life_photo061.jpg" alt="Daily_life 28">
-                            </a>
-                        </div>
-                        <div class="col-md-4 col-sm-6 mb-3">
-                            <a href="images/daily_life/daily_life_photo050.jpg" data-fancybox="daily-gallery" data-caption="Daily_life 28">
-                                <img src="images/daily_life/daily_life_photo050.jpg" alt="Daily_life 28">
-                            </a>
-                        </div>
-                    </div>
+
+                <div class="carousel-item">
+                    <a href="images/Outdoor_Shoot/outdoor_photo01.JPG" data-fancybox="gallery" data-caption="Outdoor Photo 1">
+                    <img src="images/Outdoor_Shoot/outdoor_photo01.JPG" class="d-block w-100" alt="Outdoor Photo 1">
+                    </a>
                 </div>
+
+                <div class="carousel-item">
+                    <a href="images/daily_life/daily_life_photo017.jpg" data-fancybox="gallery" data-caption="Daily Life 1">
+                    <img src="images/daily_life/daily_life_photo017.jpg" class="d-block w-100" alt="Daily Life 1">
+                    </a>
+                </div>
+
+                <!-- 필요시 더 추가 -->
+                </div>
+
+                <!-- 좌우 화살표 -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#weddingCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#weddingCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
         </div>
-    </div>
-</div>
-        <div class="ww-section ww-rsvp-detail" id="map">
+        </div>
+        <div class="ww-section ww-rsvp-detail" id="Map">
             <div class="container">
                 <div class="col text-center">
                     <h2 class="h1 text-center pb-3 ww-title" style="font-family: 'Noto Serif KR', serif;">오시는 길</h2>

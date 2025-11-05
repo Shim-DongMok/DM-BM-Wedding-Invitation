@@ -118,6 +118,16 @@
             align-items: flex-start;
             margin: 10px 0; /* 위아래 간격 조정 */
         }
+        .home-background {
+        position: absolute;     /* 배경으로 고정 */
+        top: 0;
+        left: 0;
+        width: 100%;            /* 화면 너비 꽉 차게 */
+        height: 100%;           /* 화면 높이도 꽉 차게 */
+        object-fit: cover;      /* 비율 유지하며 꽉 채움 */
+        object-position: center;
+        z-index: -1;            /* 글자 뒤로 보내기 */
+        }
 
         @media (max-width: 768px) {
         .ww-gallery img {
@@ -149,21 +159,28 @@
 <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2"></script>  -->
 <div class="page-content">
     <div class="div">
-        <div class="ww-home-page" id="home">
-            <img src="images/Studio_Shoot/studio_photo14.jpg" alt="background Photo " class="home-background">
-                <div class="container ww-announcement-container">
-                    <p class="ww-couple-name ww-title" style="font-size:4.0em">DongMok & BoMin</p>
-                    <p class="h2 mt-5 ww-title" style="font-family: 'Gugi', cursive; font-size:1.0em">
-                        | WE ARE GETTING MARRIED |
-                    </p>
-                    <p class="h2 mt-5 ww-title"
-                       style="font-family: 'Noto Serif KR', serif; font-size:1.0em; letter-spacing:-1px">
-                        <b style="font-size:1.4em;">2026. 01. 17. SAT PM 04:50</b>
-                        <br>신도림 웨딩시티 스타티스 홀
-                    </p>
-                </div>
+        <div class="ww-home-page" id="home" style="position: relative; overflow: hidden;">
+            <!-- ✅ 배경 이미지 -->
+            <img 
+            src="images/Studio_Shoot/studio_photo14.jpg" 
+            alt="background Photo"
+            class="home-background"
+            >
+
+            <!-- ✅ 내용 -->
+            <div class="container ww-announcement-container">
+            <p class="ww-couple-name ww-title" style="font-size:4.0em">DongMok & BoMin</p>
+            <p class="h2 mt-5 ww-title" style="font-family: 'Gugi', cursive; font-size:1.0em">
+                | WE ARE GETTING MARRIED |
+            </p>
+            <p class="h2 mt-5 ww-title"
+                style="font-family: 'Noto Serif  KR', serif; font-size:1.0em; letter-spacing:-1px">
+                <b style="font-size:1.4em;">2026. 01. 17. SAT PM 04:50</b>
+                <br>신도림 웨딩시티 스타티스 홀
+            </p>
             </div>
         </div>
+
         <div class="ww-nav-bar sticky-top bg-light">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">

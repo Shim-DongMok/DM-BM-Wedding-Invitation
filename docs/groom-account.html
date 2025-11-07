@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신랑 측 계좌번호</title>
+
+    <style>
+        body {
+            font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+            background-color: #fffaf5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .account-box {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 24px;
+            width: 90%;
+            max-width: 420px;
+            text-align: center;
+        }
+
+        .account-item {
+            background-color: #f7f3ef;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 12px 0;
+            font-size: 1.1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .account-name {
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .account-number {
+            color: #555;
+            margin-bottom: 8px;
+            word-break: break-all;
+        }
+
+        button.copy-btn {
+            background-color: #c7a17a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button.copy-btn:hover {
+            background-color: #b08a67;
+        }
+
+        .footer {
+            margin-top: 24px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .account-box {
+                padding: 18px;
+            }
+
+            .account-item {
+                font-size: 1rem;
+            }
+
+            button.copy-btn {
+                font-size: 0.9rem;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>💍 신랑 측 계좌번호</h2>
+
+    <div class="account-box">
+        <div class="account-item">
+            <div class="account-name">신랑 : 심동목</div>
+            <div class="account-number" id="account1">국민은행 123456-78-901234</div>
+            <button class="copy-btn" onclick="copyAccount('account1')">복사하기</button>
+        </div>
+
+        <div class="account-item">
+            <div class="account-name">혼주(아버지) : 심영수</div>
+            <div class="account-number" id="account2">농협 987654-32-109876</div>
+            <button class="copy-btn" onclick="copyAccount('account2')">복사하기</button>
+        </div>
+    </div>
+
+    <div class="footer">※ 터치하여 복사 후, 계좌이체 시 사용해주세요.</div>
+
+    <script>
+        function copyAccount(id) {
+            const text = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('계좌번호가 복사되었습니다!');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,1 +1,206 @@
+.ww-couple-name ww-title {
+    font-family: 'Noto Serif KR', serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
+.ww-announcement-container {
+    text-align: center;
+    color: papayawhip;
+    padding-top: 55vh;
+}
+
+/* 커플 이름 */
+.ww-announcement-container .ww-couple-name {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* WE ARE GETTING MARRIED */
+.ww-announcement-container .subtitle {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 3em;
+    margin-bottom: 8px;
+}
+
+/* 날짜와 장소 */
+.ww-announcement-container .wedding-info {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 3em;
+    letter-spacing: -1px;
+}
+
+.ww-announcement-container .wedding-info b {
+    font-size: 1.4em;
+}
+
+/* 신랑 & 신부 섹션 제목 스타일 */
+.couple-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 5rem;
+    /* 글자 크기 */
+    text-align: center;
+    /* 가운데 정렬 */
+    padding-bottom: 1rem;
+    /* 아래 여백 */
+    font-weight: bold;
+    /* 굵게 */
+    color: #333;
+    /* 글자색 */
+}
+
+/* 결혼식 초대 문구 스타일 */
+.invitation-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 4rem;
+    /* 글자 크기 */
+    text-align: center;
+    /* 가운데 정렬 */
+    padding-bottom: 1rem;
+    /* 아래 여백 */
+    font-weight: 600;
+    /* 약간 굵게 */
+    color: #333;
+    /* 글자색 */
+    line-height: 1.5;
+    /* 줄 간격 */
+}
+
+.ww-section-title {
+    font-size: 1.5rem;
+    /* 제목 작게 */
+}
+
+/* 신부 이름 스타일 */
+.bride-name {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.5em;
+    text-align: center;
+    /* 가운데 정렬 */
+    color: #333;
+    /* 글자색 */
+    font-weight: 500;
+    /* 중간 굵기 */
+    margin-bottom: 0.5rem;
+    /* 여백 */
+}
+
+/* 신랑·신부 이름 스타일 */
+.person-name {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 1.5em;
+    text-align: center;
+    /* 가운데 정렬 */
+    color: #333;
+    /* 글자색 (원하면 변경 가능) */
+    font-weight: 500;
+    /* 약간 두껍게 */
+    margin-bottom: 0.5rem;
+}
+
+.wedding-info {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.wedding-info-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.wedding-info-list {
+    list-style: none;
+    /* 불릿 제거 */
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+.wedding-info-list li {
+    margin-bottom: 0.5em;
+}
+
+/* 🎥 웨딩 본식 유튜브 영상 */
+.wedding-video {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    /* 데스크탑 최대 폭 제한 */
+    margin: 20px auto;
+    /* 중앙 정렬 */
+    aspect-ratio: 16 / 9;
+    /* 비율 고정 */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wedding-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+/* 🥂 식사 정보 영역 */
+.banquet-info {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banquet-info-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.banquet-info-list {
+    list-style: none;
+    /* 불릿 제거 */
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+.banquet-info-list li {
+    margin-bottom: 0.5em;
+}
+
+/* 🎬 식사 관련 유튜브 영상 */
+.banquet-video {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    /* 데스크탑 최대 폭 제한 */
+    margin: 20px auto;
+    /* 가운데 정렬 */
+    aspect-ratio: 16 / 9;
+    /* 최신 브라우저 반응형 비율 */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.banquet-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}

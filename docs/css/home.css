@@ -1,1 +1,117 @@
+.home-background {
+    position: absolute;
+    /* 배경으로 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* 화면 너비 꽉 차게 */
+    height: 100%;
+    /* 화면 높이도 꽉 차게 */
+    object-fit: cover;
+    /* 비율 유지하며 꽉 채움 */
+    object-position: center;
+    z-index: -1;
+    /* 글자 뒤로 보내기 */
+    pointer-events: none;
+    /* 클릭 막힘 방지 */
+}
 
+/* 전체 영역 정렬 및 색상 설정 */
+.ww-announcement-container {
+    font-family: 'Nanum Brush Script', serif;
+    text-align: center;
+    color: papayawhip;
+    padding-top: 55vh;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0;
+    /* 위아래 간격 조정 */
+}
+
+.wedding-subtitle {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2rem;
+    /* 기본 크기 */
+    text-align: center;
+    /* 가운데 정렬 */
+    color: #555;
+    /* 약간 부드러운 회색 톤 */
+    letter-spacing: 1px;
+    /* 약간의 자간 */
+    margin-bottom: 0.5rem;
+    /* 아래 여백 */
+}
+
+/* 아이콘과 텍스트 */
+.wedding-info-list i {
+    color: #999;
+    /* 아이콘 색상 */
+}
+
+.wedding-info-list span {
+    color: #555;
+    /* 본문 글자색 */
+}
+
+/* 음악 버튼 위치 */
+.bottom_left {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+/* 버튼 스타일 */
+.music-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.music-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.1);
+}
+
+/* 아이콘 크기 */
+.music-button i {
+    color: #333;
+    font-size: 26px;
+}
+
+/* 페이지 상단 버튼*/
+.bottom_right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+/* 페이지 상단 버튼 스타일 */
+#go-to-top {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+    /* 기본적으로 숨김 */
+}
+
+#go-to-top:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+    transform: scale(1.1);
+}

@@ -1,1 +1,124 @@
+       @media (max-width: 768px) {
+           .ww-gallery img {
+               max-width: 100%;
+               border-radius: 6px;
+               margin-bottom: 10px;
+           }
 
+           .ww-photo-gallery {
+               max-width: 100%;
+               border-radius: 6px;
+               margin-bottom: 10px;
+           }
+
+           .couple-title {
+               font-size: 2rem;
+               /* 작은 화면일 때 폰트 축소 */
+               padding-bottom: 0.5rem;
+           }
+
+           .wedding-info-title {
+               font-size: 2rem;
+           }
+
+           .wedding-info-list {
+               font-size: 0.9rem;
+           }
+
+           .ww-announcement-container {
+               padding-top: 10vh;
+           }
+
+           .ww-announcement-container .ww-couple-name {
+               font-size: 2.2em;
+           }
+
+           .ww-announcement-container .h2 {
+               font-size: 0.9em;
+           }
+
+           .ww-section-title {
+               font-size: 1.5rem;
+               /* 제목 작게 */
+           }
+
+           .wedding-subtitle {
+               font-size: 1rem;
+               /* 작은 화면에서는 조금 축소 */
+           }
+
+           .bride-name {
+               font-size: 1.2em;
+               /* 작은 화면일 때 크기 축소 */
+           }
+
+           .person-name {
+               font-size: 1.2em;
+           }
+
+           p,
+           h5 {
+               font-size: 0.95rem;
+               /* 본문 줄이기 */
+           }
+
+           .gallery-title {
+               font-size: 1.5rem;
+               /* 화면 작아질 때 폰트 축소 */
+               padding-bottom: 0.5rem;
+           }
+
+           .invitation-title {
+               font-size: 1.3rem;
+               /* 작은 화면일 때 폰트 크기 축소 */
+               padding-bottom: 0.5rem;
+           }
+
+           .embed-responsive {
+               max-width: 100%;
+           }
+
+           .embed-responsive iframe {
+               height: 240px;
+           }
+
+           .banquet-info-title {
+               font-size: 2em;
+           }
+
+           .banquet-video {
+               max-width: 100%;
+               aspect-ratio: 16 / 9;
+           }
+
+           .wedding-video {
+               max-width: 100%;
+               aspect-ratio: 16 / 9;
+           }
+
+           .account-btn {
+               width: 100%;
+               /* 버튼 전체 폭 */
+               font-size: 1.1rem;
+               margin-bottom: 10px;
+           }
+
+           .music-button {
+               width: 50px;
+               height: 50px;
+           }
+
+           .music-button i {
+               font-size: 22px;
+           }
+
+           #go-to-top {
+               padding: 10px;
+               font-size: 20px;
+           }
+
+           .carousel-control-prev span,
+           .carousel-control-next span {
+               font-size: 2rem;
+           }
+       }

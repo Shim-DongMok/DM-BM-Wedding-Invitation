@@ -1,0 +1,55 @@
+/* 💖 계좌 섹션 제목 */
+.account-title {
+    font-family: 'Noto Serif KR', serif;
+    margin-bottom: 20px;
+}
+
+/* 💳 버튼 */
+.account-buttons {
+    position: relative;
+    /* z-index 적용을 위해 relative 지정 */
+    z-index: 10;
+    /* 충분히 높은 값 */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.account-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    /* 원하는 색상으로 변경 가능 */
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.account-btn:hover {
+    background-color: #45a049;
+}
+
+.account-btn {
+    background-color: #f7d9d9;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-family: 'Noto Serif KR', serif;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/*계좌 버튼*/
+.account-btn:hover {
+    background-color: #f3b9b9;
+}
+
+.copy-btn:hover {
+    background-color: #ffb6c1;
+}

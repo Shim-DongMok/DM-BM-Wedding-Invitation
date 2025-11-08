@@ -1,1 +1,74 @@
+/* 사진 세션 */
 
+/* Gallery 제목 스타일 */
+.gallery-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 5rem;
+    /* 글자 크기 */
+    text-align: center;
+    /* 가운데 정렬 */
+    padding-bottom: 1rem;
+    /* 아래 여백 */
+    font-weight: bold;
+    /* 굵게 */
+    color: #333;
+    /* 글자색 */
+}
+
+.ww-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.ww-photo-gallery {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* 캐러셀 화살표 색상 변경 */
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    /* 버튼 영역 좁게 */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background: none;
+    /* 기존 이미지 제거 */
+}
+
+.carousel-control-prev::after,
+.carousel-control-next::after {
+    content: '';
+    /* 기존 내용 제거 */
+}
+
+.carousel-control-prev span,
+.carousel-control-next span {
+    font-size: 2rem;
+    /* 화살표 크기 */
+    color: black;
+    /* 화살표 색상 */
+    font-weight: bold;
+}
+
+/* 버튼 텍스트에 실제 화살표 넣기 */
+.carousel-control-prev span::before {
+    content: '<';
+}
+
+.carousel-control-next span::before {
+    content: '>';
+}
+
+#weddingCarousel .carousel-control-prev-icon,
+#weddingCarousel .carousel-control-next-icon {
+    background-size: 100%, 100%;
+}

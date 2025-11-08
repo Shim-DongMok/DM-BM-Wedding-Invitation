@@ -1,12 +1,37 @@
-.ww-couple-name ww-title {
-    font-family: 'Noto Serif KR', serif;
+/* 공통 폰트 적용 */
+.ww-couple-name.ww-title,
+.ww-subtitle,
+.wedding-info {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #333;
+}
+/* 커플 이름 */
+.ww-couple-name.ww-title {
+    font-weight: 700;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 2.5rem; /* 기본 PC 크기 */
+}
+/* 서브 제목 */
+.ww-subtitle {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    color: #555;
+}
+/* 웨딩 정보 */
+.wedding-info {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
 
 .ww-announcement-container {
     text-align: center;
-    color: papayawhip;
+    color: rgb(12, 11, 11);
     padding-top: 55vh;
 }
 
@@ -106,14 +131,6 @@
     margin: 0 auto;
 }
 
-.wedding-info-title {
-    font-family: 'Noto Serif KR', serif;
-    font-size: 5em;
-    font-weight: 600;
-    margin-bottom: 0.5em;
-    color: #333;
-}
-
 .wedding-info-list {
     list-style: none;
     /* 불릿 제거 */
@@ -157,14 +174,6 @@
 .banquet-info {
     text-align: center;
     margin-bottom: 20px;
-}
-
-.banquet-info-title {
-    font-family: 'Noto Serif KR', serif;
-    font-size: 5em;
-    font-weight: 600;
-    margin-bottom: 0.5em;
-    color: #333;
 }
 
 .banquet-info-list {

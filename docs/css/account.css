@@ -3,31 +3,34 @@
     font-family: 'Noto Serif KR', serif;
     margin-bottom: 20px;
 }
+/* 계좌 섹션 배경 */
 .account-section {
-    background: #f9f9f9;
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    text-align: left;
+    margin: 40px auto 20px auto;
+    max-width: 600px;       /* 좌우 고정 최대 크기 */
+    width: 90%;             /* 화면 크기에 따라 반응 */
+    padding: 0;             /* 개별 카드에서 패딩 처리 */
 }
 /* 💳 버튼 */
 
+/* 계좌 내용 정렬 */
 .account-row {
     display: flex;
+    flex-direction: row;      /* PC 화면은 가로 정렬 */
+    justify-content: flex-start;
     align-items: center;
-    justify-content: center;
     gap: 10px;
-    flex-wrap: nowrap; /* ✅ 줄바꿈 방지 */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; /* ✅ 텍스트 한 줄 유지 */
 }
-.account-block > p {
-    font-size: 1.5rem; /* 글씨 크기 키우기 */
-    font-weight: bold;  /* 굵게 */
-    margin-bottom: 8px; /* 아래 여백 */
-    text-align: center; /* 중앙 정렬 */
+/* 계좌 카드 스타일 */
+.account-block {
+    background: #f9f9f9;      /* 카드 배경색 */
+    border-radius: 12px;       /* 둥근 모서리 */
+    padding: 20px 15px;        /* 내부 여백 */
+    margin-bottom: 20px;       /* 카드 간 간격 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 약간 그림자 */
+    transition: transform 0.2s;
+    width: 100%;               /* 부모 컨테이너 기준 100% */
+    gap: 10px;                 /* 내부 요소 간격 */
+    flex-direction: column;    /* 카드 안 내용 세로 배치 */
 }
 
 
@@ -42,6 +45,7 @@
     min-width: 80px; /* 이름 최소폭 */
     font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* ✅ 화면에 맞게 자동 조절 */
     text-align: left;
+    padding: 5px;
 }
 
 .account-number {
@@ -50,6 +54,7 @@
     margin-right: 10px;
     font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* ✅ 화면에 맞게 자동 조절 */
     text-align: left;
+    padding: 5px;
 }
 
 .account-btn {
@@ -63,10 +68,9 @@
     transition: 0.3s;
 }
 
-.account-btn:hover {
-    background-color: #45a049;
+.account-block:hover {
+    transform: translateY(-2px);
 }
-
 /*계좌 버튼*/
 .account-btn:hover {
     background-color: #f3b9b9;

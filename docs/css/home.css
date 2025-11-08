@@ -1,25 +1,25 @@
+/* 전체 홈 페이지 */
 .ww-home-page {
-    height: 100dvh; /* 브라우저 UI를 제외한 실제 화면 높이 */
+    width: 100%;
     overflow: hidden;
 }
 
 .home-background {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;        /* 이미지 비율 유지 */
+    display: block;
     object-fit: cover;
-    object-position: center;
-    z-index: -1;
+}
+/* 배경 이미지 영역 */
+.home-image-container {
+    width: 100%;
+    overflow: hidden;
 }
 
 /* 전체 영역 정렬 및 색상 설정 */
 .ww-announcement-container {
-    font-family: 'Nanum Brush Script', serif;
     text-align: center;
-    color: papayawhip;
-    padding-top: 55vh;
+    padding: 40px 20px;
 }
 
 .form-wrapper {

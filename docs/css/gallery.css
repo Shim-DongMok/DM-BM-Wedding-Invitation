@@ -1,20 +1,5 @@
 /* 사진 세션 */
 
-/* Gallery 제목 스타일 */
-.gallery-title {
-    font-family: 'Noto Serif KR', serif;
-    font-size: 5rem;
-    /* 글자 크기 */
-    text-align: center;
-    /* 가운데 정렬 */
-    padding-bottom: 1rem;
-    /* 아래 여백 */
-    font-weight: bold;
-    /* 굵게 */
-    color: #333;
-    /* 글자색 */
-}
-
 .ww-gallery img {
     width: 100%;
     height: auto;

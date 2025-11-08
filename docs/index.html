@@ -45,7 +45,6 @@
             var md = new Remarkable();
             $("#comments").append(md.render(markdown_source));
         });
-  }
     </script>
         <style>
         .ww-gallery img {
@@ -325,9 +324,27 @@
 
         /* 💳 버튼 */
         .account-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
+            display: flex;
+            justify-content: center; /* 버튼 중앙 정렬 */
+            gap: 20px; /* 버튼 간격 */
+            flex-wrap: wrap; /* 화면이 좁아지면 줄 바꿈 */
+            margin: 20px 0;
+        }
+
+        .account-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #4CAF50; /* 원하는 색상으로 변경 가능 */
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .account-btn:hover {
+            background-color: #45a049;
         }
 
         .account-btn {
@@ -419,6 +436,11 @@
                 max-width: 100%;
                 aspect-ratio: 16 / 9;
             }         
+            .account-btn {
+                width: 100%; /* 버튼 전체 폭 */
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
         }
 
     </style>
@@ -671,11 +693,10 @@
                 <div class="ww-account">
                     <div class="container text-center">
                         <h2 class="h1 text-center pb-3 ww-title account-title">감사의 마음</h2>
-
-                        <div class="account-buttons">
-                            <button class="account-btn" onclick="window.location.href='groom-account.html'">신랑 측 계좌번호</button>
-                            <button class="account-btn" onclick="window.location.href='bride-account.html'">신부 측 계좌번호</button>
-                        </div>
+                            <div class="account-buttons text-center">
+                                <a href="groom-account.html" class="account-btn">신랑 측 계좌번호</a>
+                                <a href="bride-account.html" class="account-btn">신부 측 계좌번호</a>
+                            </div>
                     </div>
                 </div>
             </div>

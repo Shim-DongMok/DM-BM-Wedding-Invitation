@@ -56,15 +56,14 @@
             margin-bottom: 8px;
             word-break: break-all;
         }
-
-        button.copy-btn {
-            background-color: #c7a17a;
-            color: white;
+            .copy-btn, .back-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 1em;
             border: none;
-            border-radius: 6px;
-            padding: 8px 16px;
+            border-radius: 8px;
             cursor: pointer;
-            transition: background 0.2s;
         }
 
         button.copy-btn:hover {
@@ -89,10 +88,9 @@
             .account-item {
                 font-size: 1rem;
             }
-
-            button.copy-btn {
-                font-size: 0.9rem;
-                padding: 6px 12px;
+            .back-btn {
+                background-color: #555;
+                color: white;
             }
         }
     </style>
@@ -104,14 +102,16 @@
         <div class="account-item">
             <div class="account-name">신랑 : 심동목</div>
             <div class="account-number" id="account1">국민은행 123456-78-901234</div>
-            <button class="copy-btn" onclick="copyAccount('account1')">복사하기</button>
+            <button class="copy-btn" onclick="copyAccount('account1')">📋 복사하기</button><br>
+            <button class="back-btn" onclick="goBack()">🔙 뒤로가기</button>
         </div>
 
         <!--
         <div class="account-item">
             <div class="account-name">혼주(아버지) : 심영수</div>
             <div class="account-number" id="account2">농협 987654-32-109876</div>
-            <button class="copy-btn" onclick="copyAccount('account2')">복사하기</button>
+            <button class="copy-btn" onclick="copyAccount('account2')"> 복사하기</button><br>
+            <button class="back-btn" onclick="goBack()">🔙 뒤로가기</button>
         </div>
         -->
     </div>

@@ -21,6 +21,11 @@
     /* 글자 뒤로 보내기 */
     pointer-events: none;
     /* 클릭 막힘 방지 */
+    touch-action: manipulation; /* 터치 시 확대 방지 */
+    -webkit-user-select: none;  /* 선택 방지 */
+    -webkit-touch-callout: none; /* 길게 눌렀을 때 메뉴 방지 */
+    -webkit-tap-highlight-color: transparent; /* 터치 하이라이트 제거 */
+    user-select: none;
 }
 
 /* 전체 영역 정렬 및 색상 설정 */

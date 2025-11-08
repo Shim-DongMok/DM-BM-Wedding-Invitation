@@ -155,7 +155,7 @@
 /* 🥂 식사 정보 영역 */
 .banquet-info {
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .banquet-info-title {
@@ -178,6 +178,11 @@
 
 .banquet-info-list li {
     margin-bottom: 0.5em;
+}
+
+.banquet-info-list li span {
+    word-break: keep-all;
+    /* 단어 단위 줄바꿈 방지 */
 }
 
 /* 🎬 식사 관련 유튜브 영상 */

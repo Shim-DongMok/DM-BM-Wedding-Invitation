@@ -187,7 +187,7 @@
                                     </a>
                                 </div>
 
-                                
+
                                 <div class="carousel-item">
                                     <a href="images/Studio_Shoot/studio_photo03.jpeg" data-fancybox="gallery">
                                         <img src="images/Studio_Shoot/studio_photo03.jpeg" class="d-block w-100">
@@ -198,13 +198,13 @@
                                         <img src="images/Studio_Shoot/studio_photo11.jpg" class="d-block w-100">
                                     </a>
                                 </div>
-                                
+
                                 <div class="carousel-item">
                                     <a href="images/Outdoor_Shoot/outdoor_photo01.JPG" data-fancybox="gallery">
                                         <img src="images/Outdoor_Shoot/outdoor_photo01.JPG" class="d-block w-100">
                                     </a>
                                 </div>
-                                
+
                                 <div class="carousel-item">
                                     <a href="images/Outdoor_Shoot/outdoor_photo04.JPG" data-fancybox="gallery">
                                         <img src="images/Outdoor_Shoot/outdoor_photo04.JPG" class="d-block w-100">
@@ -342,9 +342,30 @@
                     <div class="ww-account">
                         <div class="container text-center">
                             <h2 class="h1 text-center pb-3 ww-title account-title">감사의 마음</h2>
-                            <div class="account-buttons text-center">
-                                <a href="groom-account.html" class="account-btn">신랑 측 계좌번호</a>
-                                <a href="bride-account.html" class="account-btn">신부 측 계좌번호</a>
+
+                            <!-- 계좌 표시 + 복사 버튼 -->
+                            <div class="account-display mt-3">
+                                <!-- 신랑 계좌 -->
+                                <div class="account-block">
+                                    <p>💍 신랑 측 계좌번호</p>
+                                    <div class="account-row">
+                                        <span class="account-name">심동목</span>
+                                        <span class="account-number" id="groomAccount">국민은행 752602-04-200156</span>
+                                        <button class="account-btn copy-btn"
+                                            onclick="copyAccount('groomAccount')">복사하기</button>
+                                    </div>
+                                </div>
+
+                                <!-- 신부 계좌 -->
+                                <div class="account-block mt-3">
+                                    <p>💍 신부 측 계좌번호</p>
+                                    <div class="account-row">
+                                        <span class="account-name">김보민</span>
+                                        <span class="account-number" id="brideAccount">신한은행 110-311-208990</span>
+                                        <button class="account-btn copy-btn"
+                                            onclick="copyAccount('brideAccount')">복사하기</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -5,51 +5,54 @@
 }
 
 /* 💳 버튼 */
-.account-buttons {
-    position: relative;
-    /* z-index 적용을 위해 relative 지정 */
-    z-index: 10;
-    /* 충분히 높은 값 */
+
+.account-row {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 20px 0;
+    align-items: center;
+     justify-content: center; /* 중앙 정렬 */
+    gap: 10px; /* 이름, 계좌번호, 버튼 간격 */
+    flex-wrap: wrap; /* 모바일에서는 줄바꿈 가능 */
+}
+.account-block > p {
+    font-size: 1.5rem; /* 글씨 크기 키우기 */
+    font-weight: bold;  /* 굵게 */
+    margin-bottom: 8px; /* 아래 여백 */
+    text-align: center; /* 중앙 정렬 */
+}
+
+
+.account-display {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.account-name {
+    font-weight: bold;
+    min-width: 80px; /* 이름 최소폭 */
+}
+
+.account-number {
+    font-family: monospace;
+    color: #333;
+    margin-right: 10px;
 }
 
 .account-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #4CAF50;
-    /* 원하는 색상으로 변경 가능 */
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-    text-align: center;
+    padding: 6px 15px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .account-btn:hover {
     background-color: #45a049;
 }
 
-.account-btn {
-    background-color: #f7d9d9;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 20px;
-    font-size: 1em;
-    font-family: 'Noto Serif KR', serif;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
 /*계좌 버튼*/
 .account-btn:hover {
     background-color: #f3b9b9;
-}
-
-.copy-btn:hover {
-    background-color: #ffb6c1;
 }

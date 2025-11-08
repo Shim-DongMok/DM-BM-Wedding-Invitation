@@ -33,3 +33,24 @@ goToTopBtn.addEventListener("click", () => {
 });
 
 /* Fancybox 초기화 */
+
+
+/* 계좌번호 복사 */
+const accounts = {
+    groom: "신랑 측 계좌번호: 123-4567-8901",
+    bride: "신부 측 계좌번호: 987-6543-2101"
+};
+
+// 버튼 클릭 시 계좌번호 표시
+function showAccount(type) {
+    const accountNumber = document.getElementById("accountNumber");
+    accountNumber.innerText = accounts[type];
+}
+
+// 복사 버튼
+function copyAccount(accountId) {
+    const accountText = document.getElementById(accountId).innerText;
+    navigator.clipboard.writeText(accountText)
+        .then(() => alert("계좌번호가 복사되었습니다!"))
+        .catch(err => alert("복사 실패: " + err));
+}

@@ -23,6 +23,14 @@
     text-align: left;
 }
 
+.ww-map-info h2,
+.ww-map-info h5,
+.ww-map-info h6 {
+    font-family: 'Noto Serif KR', serif;
+    color: #333; /* 필요에 따라 글씨 색 조정 */
+    margin: 0.5em 0;
+}
+
 .transport-info h6 {
     font-size: 16px;
     font-weight: 600;
@@ -50,4 +58,37 @@
     font-weight: 700;
     margin-bottom: 25px;
     color: #2b7de9;
+}
+/* 지도 아이콘 */
+.ww-map-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.map-icon {
+    width: 60px; /* 아이콘 크기 */
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.map-icon:hover {
+    transform: scale(1.1);
+}
+
+/* 지도 iframe */
+.ww-map-iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.ww-map-iframe-container iframe {
+    width: 900px;
+    height: 700px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }

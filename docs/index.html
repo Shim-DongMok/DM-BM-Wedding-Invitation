@@ -118,14 +118,15 @@
             margin: 10px 0; /* 위아래 간격 조정 */
         }
         .home-background {
-        position: absolute;     /* 배경으로 고정 */
-        top: 0;
-        left: 0;
-        width: 100%;            /* 화면 너비 꽉 차게 */
-        height: 100%;           /* 화면 높이도 꽉 차게 */
-        object-fit: cover;      /* 비율 유지하며 꽉 채움 */
-        object-position: center;
-        z-index: -1;            /* 글자 뒤로 보내기 */
+            position: absolute;     /* 배경으로 고정 */
+            top: 0;
+            left: 0;
+            width: 100%;            /* 화면 너비 꽉 차게 */
+            height: 100%;           /* 화면 높이도 꽉 차게 */
+            object-fit: cover;      /* 비율 유지하며 꽉 채움 */
+            object-position: center;
+            z-index: -1;            /* 글자 뒤로 보내기 */
+            pointer-events: none; /* 클릭 막힘 방지 */
         }
         /* 전체 영역 정렬 및 색상 설정 */
             .ww-announcement-container {
@@ -324,10 +325,12 @@
 
         /* 💳 버튼 */
         .account-buttons {
+            position: relative; /* z-index 적용을 위해 relative 지정 */
+            z-index: 10;        /* 충분히 높은 값 */
             display: flex;
-            justify-content: center; /* 버튼 중앙 정렬 */
-            gap: 20px; /* 버튼 간격 */
-            flex-wrap: wrap; /* 화면이 좁아지면 줄 바꿈 */
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
             margin: 20px 0;
         }
 

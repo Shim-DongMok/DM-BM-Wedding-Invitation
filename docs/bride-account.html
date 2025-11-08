@@ -88,11 +88,6 @@
             .account-item {
                 font-size: 1rem;
             }
-
-            .copy-btn {
-                font-size: 0.9rem;
-                padding: 6px 12px;
-            }
             .back-btn {
                 background-color: #555;
                 color: white;
@@ -101,27 +96,28 @@
     </style>
 </head>
 <body>
-    <h2>💐 신부 측 계좌번호</h2>
+    <h2>💍 신부 측 계좌번호</h2>
 
     <div class="account-box">
         <div class="account-item">
-            <div class="account-name">신부 : 김보민</div>
-            <div class="account-number" id="account1">신한은행 123-456-789012</div>
-            <button class="copy-btn" onclick="copyAccount()">📋 복사하기</button><br>
+            <div class="account-name">신부 : 심동목</div>
+            <div class="account-number" id="account1">신한은행 123456-78-901234</div>
+            <button class="copy-btn" onclick="copyAccount('account1')">📋 복사하기</button><br>
             <button class="back-btn" onclick="goBack()">🔙 뒤로가기</button>
         </div>
 
-      <!--     
-      <div class="account-item">
-            <div class="account-name">혼주(아버지) : 김영호</div>
-            <div class="account-number" id="account2">하나은행 987-654-321098</div>
-            <button class="copy-btn" onclick="copyAccount()">📋 복사하기</button><br>
+        <!--
+        <div class="account-item">
+            <div class="account-name">혼주(아버지) : 심영수</div>
+            <div class="account-number" id="account2">농협 987654-32-109876</div>
+            <button class="copy-btn" onclick="copyAccount('account2')"> 복사하기</button><br>
             <button class="back-btn" onclick="goBack()">🔙 뒤로가기</button>
-        </div>  
-      -->
+        </div>
+        -->
     </div>
 
     <div class="footer">※ 터치하여 복사 후, 계좌이체 시 사용해주세요.</div>
+
 
     <script>
         function copyAccount(id) {
@@ -129,6 +125,14 @@
             navigator.clipboard.writeText(text).then(() => {
                 alert('계좌번호가 복사되었습니다!');
             });
+        }
+
+        function goBack() {
+            if (document.referrer) { // 이전 페이지가 있으면
+                history.back();
+            } else { // 없으면 메인 페이지로 이동
+                window.location.href = 'index.html#Main';
+            }
         }
     </script>
 </body>

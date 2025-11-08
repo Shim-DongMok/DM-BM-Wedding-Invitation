@@ -27,27 +27,10 @@
     <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js" type="text/javascript"></script> <!--축하 메시지 사용 코드-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-    <script>
-        $(document).ready(function () {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-            function getText() {
-                var result = null;
-                $.ajax({
-                    url: "https://raw.githubusercontent.com/AndersonChoi/wedding-card/master/README.md",
-                    type: 'get',
-                    dataType: 'html',
-                    async: false,
-                    success: function (data) { result = data; }
-                }
-                );
-                FileReady = true;
-                return result;
-            }
-            var markdown_source = getText();
-            var md = new Remarkable();
-            $("#comments").append(md.render(markdown_source));
-        });
-    </script>
     <style>
         .ww-gallery img {
             width: 100%;
@@ -434,6 +417,39 @@
             background-color: #ffb6c1;
         }
 
+        /* 음악 버튼 위치 */
+        .bottom_left {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 100;
+        }
+
+        /* 버튼 스타일 */
+        .music-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .music-button:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            transform: scale(1.1);
+        }
+
+        /* 아이콘 크기 */
+        .music-button i {
+            color: #333;
+            font-size: 26px;
+        }
+
         @media (max-width: 768px) {
             .ww-gallery img {
                 max-width: 100%;
@@ -448,13 +464,13 @@
             }
 
             .couple-title {
-                font-size: 1.5rem;
+                font-size: 2rem;
                 /* 작은 화면일 때 폰트 축소 */
                 padding-bottom: 0.5rem;
             }
 
             .wedding-info-title {
-                font-size: 1.2rem;
+                font-size: 2rem;
             }
 
             .wedding-info-list {
@@ -519,7 +535,7 @@
             }
 
             .banquet-info-title {
-                font-size: 1.2em;
+                font-size: 2em;
             }
 
             .banquet-video {
@@ -537,6 +553,15 @@
                 /* 버튼 전체 폭 */
                 font-size: 1.1rem;
                 margin-bottom: 10px;
+            }
+
+            .music-button {
+                width: 50px;
+                height: 50px;
+            }
+
+            .music-button i {
+                font-size: 22px;
             }
         }
     </style>
@@ -965,15 +990,10 @@
 
     <div class="bottom_left">
         <audio id="player" src="mus.mp3"></audio>
-        <div>
-            <i class="fa fa-music fa-2x" onclick="document.getElementById('player').play()"></i>
+        <div class="music-button" onclick="toggleMusic()">
+            <i id="music-icon" class="fa fa-music"></i>
         </div>
     </div>
-
-
-
-
-
 
     <!-- Fancybox 초기화 -->
     <script>
@@ -986,7 +1006,26 @@
                 display: ["zoom", "slideshow", "fullscreen", "download", "thumbs", "close"]
             }
         });
+
+        const player = document.getElementById("player");
+        const icon = document.getElementById("music-icon");
+
+        function toggleMusic() {
+            if (player.paused) {
+                player.play().then(() => {
+                    icon.classList.remove("fa-music");
+                    icon.classList.add("fa-pause");
+                }).catch(err => {
+                    alert("재생을 위해 화면을 터치해주세요 🎵");
+                });
+            } else {
+                player.pause();
+                icon.classList.remove("fa-pause");
+                icon.classList.add("fa-music");
+            }
+        }
     </script>
+
 
 
 </body>

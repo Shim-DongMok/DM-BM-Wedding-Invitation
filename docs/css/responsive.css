@@ -25,6 +25,7 @@
      .wedding-info-list {
          font-size: 0.9rem;
      }
+     
 
      .ww-announcement-container {
          padding-top: 10vh;
@@ -85,6 +86,9 @@
 
      .banquet-info-title {
          font-size: 2em;
+     }
+     .banquet-info-list {
+         font-size: 0.9rem; 
      }
 
      .banquet-video {

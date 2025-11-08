@@ -15,7 +15,8 @@
     object-position: center;
     z-index: -1;
     -webkit-tap-highlight-color: transparent; /* 터치 시 하이라이트 제거 */
-    touch-action: none; /* 터치 확대 방지 */
+    touch-action: manipulation; /* 터치 확대 방지 */
+    -ms-touch-action: manipulation;
 }
 
 /* 전체 영역 정렬 및 색상 설정 */

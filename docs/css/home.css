@@ -1,8 +1,6 @@
 .ww-home-page {
+    height: 100dvh; /* 브라우저 UI를 제외한 실제 화면 높이 */
     overflow: hidden;
-    width: 100%;
-    height: var(--vh); /* JS로 계산한 실제 화면 높이 */
-    position: relative;
 }
 
 .home-background {

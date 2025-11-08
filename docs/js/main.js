@@ -1,3 +1,15 @@
+// 첫 화면 크기 고정
+function setHomeHeight() {
+    const homePage = document.querySelector('.ww-home-page');
+    homePage.style.height = window.innerHeight + 'px';
+}
+
+// 페이지 로드 시
+setHomeHeight();
+
+// 화면 회전이나 리사이즈 시에도 재적용
+window.addEventListener('resize', setHomeHeight);
+
 /* 음악 재생 */
 const player = document.getElementById("player");
 const icon = document.getElementById("music-icon");

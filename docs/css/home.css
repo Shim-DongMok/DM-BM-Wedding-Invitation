@@ -1,8 +1,7 @@
 .ww-home-page {
-    position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh; /* 화면 높이 100% */
+    position: relative; /* absolute 이미지를 기준으로 */
 }
 
 .home-background {

@@ -71,6 +71,7 @@
      }
 
      .invitation-title {
+        margin-top: 60px;
          font-size: 1.3rem;
          /* 작은 화면일 때 폰트 크기 축소 */
          padding-bottom: 0.5rem;

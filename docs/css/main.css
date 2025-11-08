@@ -53,6 +53,7 @@
 
 /* 결혼식 초대 문구 스타일 */
 .invitation-title {
+    margin-top: 60px; /* 위쪽 공간 40px 추가, */
     font-family: 'Noto Serif KR', serif;
     font-size: 4rem;
     /* 글자 크기 */

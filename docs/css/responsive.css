@@ -104,14 +104,14 @@
      }
 
      .account-block {
-         padding: 30px 15px;
+         padding: 20px;
          border-radius: 16px;
-         margin: 30px 10px;
+         margin: 20px;
      }
 
      .account-row {
          flex-direction: column;
-         align-items: center;
+         align-items: left;
          /* 모바일에서도 중앙 정렬 */
          gap: 5px;
      }
@@ -121,6 +121,7 @@
          /* ✅ 너무 길면 잘라내기 */
          overflow: hidden;
          text-overflow: ellipsis;
+         text-align: left;
      }
 
      .account-btn {

@@ -5,12 +5,11 @@
 }
 .account-section {
     background: #f9f9f9;
-    padding: 20px;
-    border: none;
     border-radius: 12px;
-    margin: 40px auto;
+    padding: 20px;
     margin-bottom: 20px;
-    max-width: 800px; /* 가운데 정렬 */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: left;
 }
 /* 💳 버튼 */
 
@@ -42,6 +41,7 @@
     font-weight: bold;
     min-width: 80px; /* 이름 최소폭 */
     font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* ✅ 화면에 맞게 자동 조절 */
+    text-align: left;
 }
 
 .account-number {
@@ -49,6 +49,7 @@
     color: #333;
     margin-right: 10px;
     font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* ✅ 화면에 맞게 자동 조절 */
+    text-align: left;
 }
 
 .account-btn {

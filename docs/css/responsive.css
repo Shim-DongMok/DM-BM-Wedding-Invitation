@@ -71,7 +71,7 @@
      }
 
      .invitation-title {
-        margin-top: 60px;
+         margin-top: 60px;
          font-size: 1.3rem;
          /* 작은 화면일 때 폰트 크기 축소 */
          padding-bottom: 0.5rem;
@@ -103,14 +103,29 @@
          aspect-ratio: 16 / 9;
      }
 
-   .account-row {
-        flex-direction: column;
-        align-items: center; /* 모바일에서도 중앙 정렬 */
-    }
+     .account-block {
+         padding: 30px 15px;
+         border-radius: 16px;
+         margin: 30px 10px;
+     }
 
-    .account-btn {
-        margin-top: 5px;
-    }
+     .account-row {
+         flex-direction: column;
+         align-items: center;
+         /* 모바일에서도 중앙 정렬 */
+         gap: 5px;
+     }
+
+     .account-number {
+         max-width: 55vw;
+         /* ✅ 너무 길면 잘라내기 */
+         overflow: hidden;
+         text-overflow: ellipsis;
+     }
+
+     .account-btn {
+         margin-top: 5px;
+     }
 
      .account-display {
          font-size: 1rem;

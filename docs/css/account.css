@@ -3,15 +3,25 @@
     font-family: 'Noto Serif KR', serif;
     margin-bottom: 20px;
 }
-
+.account-section {
+    background-color: #faf7f3; /* 은은한 베이지톤 */
+    padding: 50px 20px;
+    border: none;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 800px; /* 가운데 정렬 */
+}
 /* 💳 버튼 */
 
 .account-row {
     display: flex;
     align-items: center;
-     justify-content: center; /* 중앙 정렬 */
-    gap: 10px; /* 이름, 계좌번호, 버튼 간격 */
-    flex-wrap: wrap; /* 모바일에서는 줄바꿈 가능 */
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap; /* ✅ 줄바꿈 방지 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* ✅ 텍스트 한 줄 유지 */
 }
 .account-block > p {
     font-size: 1.5rem; /* 글씨 크기 키우기 */
@@ -30,12 +40,14 @@
 .account-name {
     font-weight: bold;
     min-width: 80px; /* 이름 최소폭 */
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* ✅ 화면에 맞게 자동 조절 */
 }
 
 .account-number {
     font-family: monospace;
     color: #333;
     margin-right: 10px;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* ✅ 화면에 맞게 자동 조절 */
 }
 
 .account-btn {
@@ -46,6 +58,7 @@
     background-color: #f2f2f2;
     cursor: pointer;
     transition: 0.3s;
+    white-space: nowrap; /* ✅ 버튼 줄바꿈 방지 */
 }
 
 .account-btn:hover {

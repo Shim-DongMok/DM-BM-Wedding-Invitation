@@ -1,26 +1,31 @@
  /* 반응형 코드 */
  @media (max-width: 768px) {
      .home-background {
-        width: 98%; /* 모바일은 여백 조금 줄임 */
-        border-radius: 8px;
-    }
-    .ww-couple-name.ww-title {
-        font-size: 2rem;
-        margin-top: 20px;
-        margin-bottom: 8px;
-    }
+         width: 98%;
+         /* 모바일은 여백 조금 줄임 */
+         border-radius: 8px;
+     }
 
-    .ww-subtitle {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-    }
-.img-fluid {
-        border-radius: 12px;
-    }
-    .wedding-info {
-        font-size: 0.9rem;
-        margin-bottom: 20px;
-    }
+     .ww-couple-name.ww-title {
+         font-size: 2rem;
+         margin-top: 20px;
+         margin-bottom: 8px;
+     }
+
+     .ww-subtitle {
+         font-size: 1.2rem;
+         margin-bottom: 10px;
+     }
+
+     .img-fluid {
+         border-radius: 12px;
+     }
+
+     .wedding-info {
+         font-size: 0.9rem;
+         margin-bottom: 20px;
+     }
+
      .ww-gallery img {
          max-width: 100%;
          border-radius: 6px;
@@ -49,14 +54,17 @@
 
 
      .ww-announcement-container {
-        padding: 30px 15px;
-    }
-.ww-title.subtitle {
-        font-size: 1.2rem;
-    }
-    .ww-title.wedding-info {
-        font-size: 1rem;
-    }
+         padding: 30px 15px;
+     }
+
+     .ww-title.subtitle {
+         font-size: 1.2rem;
+     }
+
+     .ww-title.wedding-info {
+         font-size: 1rem;
+     }
+
      .ww-announcement-container .ww-couple-name {
          font-size: 2.2em;
      }
@@ -137,12 +145,15 @@
          margin: 20px;
      }
 
-     .account-row {
-         flex-direction: column;
-         align-items: flex-start;
-         gap: 5px;
-     }
-
+ .account-row {
+    flex-direction: row;      /* 가로 정렬 */
+    align-items: center;
+    justify-content: center;  /* 부모 안에서 가로 중앙 정렬 */
+    gap: 20px;
+  }
+ .account-name {
+    margin-right: 8px;
+  }
      .account-number {
          max-width: 55vw;
          /* ✅ 너무 길면 잘라내기 */
@@ -152,9 +163,9 @@
      }
 
      .account-btn {
-     width: 90%;
-        font-size: 0.95rem;
-        padding: 0.6rem 1.5rem;
+         width: 90%;
+         font-size: 0.95rem;
+         padding: 0.6rem 1.5rem;
      }
 
      .account-display {
@@ -206,4 +217,20 @@
      .account-btn:hover {
          background: #ff6b6b;
      }
+
+     .contact-card {
+         max-width: 90%;
+         padding: 1.5rem 0.8rem;
+     }
+
+     .contact-btn {
+         font-size: 0.95rem;
+         padding: 0.6rem 1rem;
+     }
+
+     .contact-buttons {
+         flex-direction: column;
+         gap: 0.7rem;
+     }
+
  }

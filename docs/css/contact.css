@@ -1,1 +1,43 @@
+.ww-contact {
+  background-color: #faf8f6;
+  padding: 40px 0;
+  border-top: 1px solid #e0dcd8;
+}
 
+.ww-contact .account-title {
+  font-family: "Noto Serif KR", serif;
+  color: #4a3f35;
+}
+
+.account-block p {
+  font-family: "Noto Serif KR", serif;
+  font-size: 1.1rem;
+  color: #4a3f35;
+  margin-bottom: 0.8rem;
+}
+
+.account-row {
+  display: flex;
+  flex-direction: column; /* 버튼 세로 배치 */
+  align-items: center;
+  gap: 8px;
+}
+
+.account-btn {
+  display: inline-block;
+  background-color: #f4eee8;
+  border: 1px solid #d8cfc5;
+  color: #4a3f35;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-family: "Noto Serif KR", serif;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  width: 150px; /* 버튼 폭 통일 */
+  text-align: center;
+}
+
+.account-btn:hover {
+  background-color: #e9e1d9;
+  color: #2d2620;
+}

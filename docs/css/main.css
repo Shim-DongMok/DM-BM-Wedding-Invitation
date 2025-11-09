@@ -145,6 +145,30 @@
     margin-bottom: 0.5em;
 }
 
+/* 🎬 식사 관련 유튜브 영상 */
+.banquet-video {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    /* 데스크탑 최대 폭 제한 */
+    margin: 20px auto;
+    /* 가운데 정렬 */
+    aspect-ratio: 16 / 9;
+    /* 최신 브라우저 반응형 비율 */
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.banquet-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
 /* 🎥 웨딩 본식 유튜브 영상 */
 .wedding-video {
     position: relative;
@@ -152,9 +176,9 @@
     max-width: 800px;
     /* 데스크탑 최대 폭 제한 */
     margin: 20px auto;
-    /* 중앙 정렬 */
+    /* 가운데 정렬 */
     aspect-ratio: 16 / 9;
-    /* 비율 고정 */
+    /* 최신 브라우저 반응형 비율 */
     overflow: hidden;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -193,29 +217,4 @@
 .banquet-info-list li span {
     word-break: keep-all;
     /* 단어 단위 줄바꿈 방지 */
-}
-
-/* 🎬 식사 관련 유튜브 영상 */
-.banquet-video {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    /* 데스크탑 최대 폭 제한 */
-    margin: 20px auto;
-    /* 가운데 정렬 */
-    aspect-ratio: 16 / 9;
-    /* 최신 브라우저 반응형 비율 */
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.banquet-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 12px;
 }

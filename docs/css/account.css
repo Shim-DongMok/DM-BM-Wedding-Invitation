@@ -18,36 +18,27 @@
     flex-direction: row;      /* PC 화면은 가로 정렬 */
     justify-content: flex-start;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 /* 계좌 카드 스타일 */
 .account-block {
-    background: #f9f9f9;      /* 카드 배경색 */
-    border-radius: 12px;       /* 둥근 모서리 */
-    padding: 20px 15px;        /* 내부 여백 */
-    margin-bottom: 20px;       /* 카드 간 간격 */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 약간 그림자 */
-    transition: transform 0.2s;
-    width: 100%;               /* 부모 컨테이너 기준 100% */
-    gap: 10px;                 /* 내부 요소 간격 */
-    flex-direction: column;    /* 카드 안 내용 세로 배치 */
+    margin: 1.5rem auto;
+    text-align: center;
 }
-
+.account-block p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #444;
+    text-align: center;
+}
 
 .account-display {
     margin-top: 15px;
     font-size: 1.1rem;
     color: #333;
 }
-
-.account-name {
-    font-weight: bold;
-    min-width: 80px; /* 이름 최소폭 */
-    font-size: clamp(0.9rem, 2.5vw, 1.2rem); /* ✅ 화면에 맞게 자동 조절 */
-    text-align: left;
-    padding: 5px;
-}
-
 .account-number {
     font-family: monospace;
     color: #333;
@@ -58,14 +49,19 @@
 }
 
 .account-btn {
-    background-color: #ff69b4; /* 핑크색 버튼 */
-    color: white;
+    display: inline-block;
+    background-color: #f5a623; /* 부드러운 포인트 컬러 */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 2.5rem;
     border: none;
-    padding: 8px 16px;
-    border-radius: 8px;
+    border-radius: 50px; /* 둥근 버튼 */
     cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    width: 80%; /* 버튼을 길게 */
+    max-width: 300px; /* 너무 길어지지 않게 제한 */
+    text-align: center;
 }
 
 .account-block:hover {

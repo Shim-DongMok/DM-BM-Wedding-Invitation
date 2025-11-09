@@ -5,15 +5,19 @@
 }
 
 .home-background {
-    width: 100%;
-    height: auto;        /* 이미지 비율 유지 */
-    display: block;
+    width: 95%; /* 양쪽 5% 여백 (조절 가능) */
+    max-width: 1200px; /* 너무 커지지 않게 제한 */
+    height: auto;
+    border-radius: 12px; /* 모서리 둥글게 (선택사항) */
     object-fit: cover;
+    object-position: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* 은은한 그림자 (선택사항) */
 }
 /* 배경 이미지 영역 */
 .home-image-container {
     width: 100%;
-    overflow: hidden;
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
 }
 
 /* 전체 영역 정렬 및 색상 설정 */
@@ -21,7 +25,12 @@
     text-align: center;
     padding: 40px 20px;
 }
-
+/* 신랑 & 신부 사진 둥근 모서리 */
+.img-fluid {
+    border-radius: 12px; /* 둥글게: 값이 클수록 더 둥급니다 */
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .form-wrapper {
     display: flex;
     justify-content: center;
